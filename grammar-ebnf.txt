@@ -1,0 +1,4 @@
+
+tripleX ::= ’<< ’  subjectX  predicate  objectX  ’ >> ’
+subjectX ::= iri | BlankNode | tripleX
+objectX ::= iri | BlankNode | literal | tripleX
