@@ -2,3 +2,10 @@
 tripleX ::= ’<< ’  subjectX  predicate  objectX  ’ >> ’
 subjectX ::= iri | BlankNode | tripleX
 objectX ::= iri | BlankNode | literal | tripleX
+
+
+/* sparql 1.1 [10] /*
+subject ::= iri | BlankNode | collection | tripleX
+
+/* sparql 1.1 [11] */
+object ::= iri | BlankNode | collection | blankNodePropertyList | literal | tripleX
